@@ -9,10 +9,13 @@
 ## 打包成安装文件 **.msi
 1. 安装cxfreeze：pip cxfreeze opencv_python -i http://pypi.douban.com/simple --trusted-host pypi.douban.com
 2. 新建[setup.py](setup.py)文件
-3. 执行命令：python setup.py bdist_msi
+3. cmd执行命令行：python setup.py bdist_msi
 
-生成两个文件夹：
+执行命令后生成两个文件夹：
 + build：免安装文件
 + dist：安装文件**.msi
 
 ## 软件使用说明
+在安装目下，找到wechat_helper.exe，双击可以运行
+
+首先会弹出命令行，提示扫码登录微信。然后，登录后会弹出窗口。
