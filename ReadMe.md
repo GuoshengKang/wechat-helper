@@ -10,3 +10,9 @@
 1. 安装cxfreeze：pip cxfreeze opencv_python -i http://pypi.douban.com/simple --trusted-host pypi.douban.com
 2. 新建[setup.py](setup.py)文件
 3. 执行命令：python setup.py bdist_msi
+
+生成两个文件夹：
++ build：免安装文件
++ dist：安装文件**.msi
+
+## 软件使用说明
