@@ -25,7 +25,9 @@
 
 ## 软件使用说明
 
-安装 wechat_helper-0.1-amd64.msi
+安装 wechat_helper-0.1-amd64.msi(链接：https://pan.baidu.com/s/1ElIiw52_9aNREyLKT73sAw 
+提取码：oa3i 
+复制这段内容后打开百度网盘手机App，操作更方便哦)
 
 在安装目下，找到 wechat_helper.exe，双击可以运行
 
