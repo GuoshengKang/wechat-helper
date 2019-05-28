@@ -10,6 +10,10 @@
 + **Tkinter**：Tkinter 是 Python 的标准 GUI 库,是python内置的安装包。
 + **wxpy**：pip wxpy opencv_python -i http://pypi.douban.com/simple --trusted-host pypi.douban.com
 
+## 源代码（两个版本）
++ [wechat_helper_v0.py](wechat_helper_v0.py) 为封装成类
++ [wechat_helper.py](wechat_helper.py) 为封装成类
+
 ## 打包成安装文件 **.msi
 1. 安装cxfreeze：pip cxfreeze opencv_python -i http://pypi.douban.com/simple --trusted-host pypi.douban.com
 2. 新建[setup.py](setup.py)文件
