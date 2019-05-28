@@ -11,8 +11,8 @@
 + **wxpy**：pip wxpy opencv_python -i http://pypi.douban.com/simple --trusted-host pypi.douban.com
 
 ## 源代码（两个版本）
-+ [wechat_helper_v0.py](wechat_helper_v0.py) 为封装成类
-+ [wechat_helper.py](wechat_helper.py) 为封装成类
++ [wechat_helper_v0.py](wechat_helper_v0.py) 未封装成类版本
++ [wechat_helper.py](wechat_helper.py) 封装成类版本
 
 ## 打包成安装文件 **.msi
 1. 安装cxfreeze：pip cxfreeze opencv_python -i http://pypi.douban.com/simple --trusted-host pypi.douban.com
