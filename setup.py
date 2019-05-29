@@ -18,7 +18,7 @@ setup(name = "wechat_helper",
 	version = "0.1", 
 	description = "My GUI application!", 
 	options = {"build_exe": build_exe_options}, 
-	executables = [Executable(script="wechat_helper.py",icon = "./helper.ico")]
+	executables = [Executable(script="wechat_helper.py",icon = "./wechat_helper.ico")]
 	)
 
 # Executable(script="wechat_helper.py",base=base)

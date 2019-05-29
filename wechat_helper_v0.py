@@ -14,6 +14,9 @@ import os
 ##############################################
 def mClick():
 	'''获取微信群成员按钮事件'''
+	global monty
+	if monty.winfo_exists():
+		monty.destroy()
 	if txt1.get()=='':
 		tkinter.messagebox.showinfo('提示','请输入群名称！')
 		return
@@ -28,9 +31,6 @@ def mClick():
 			group_names.append(group_name)
 		tkinter.messagebox.showerror('错误','搜索到多个{}群:{}，请输入精确的群名称！'.format(len(group_names),group_names))
 	else: # len(mygroups)==1
-		global monty
-		if monty.winfo_exists():
-			monty.destroy()
 		r0='<Group: (.*?)>' # <Group: 学生之家>
 		group_name=re.search(r0,str(mygroups[0])).group(1)
 		# 过滤掉一些图标符号，否则不能显示，会报错
@@ -126,6 +126,7 @@ bot=Bot(cache_path=True)
 groups=bot.groups() #获取所有群 
 # 创建窗体对象
 win=tkinter.Tk()
+# win.iconbitmap("C:\\test\\wechat_helper.ico") # 设置窗口图标
 win.resizable(False,False) # 不允许改变窗口大小
 # 定义窗体标题
 win.title('微信群群发助手')

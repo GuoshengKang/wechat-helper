@@ -22,9 +22,11 @@ class sendMsgToGroupMembers:
 		self.variables=None # 定义复选框状态变量
 		# 创建窗体对象
 		self.win=tkinter.Tk()
+		# self.win.iconbitmap("C:\\test\\wechat_helper.ico") # 设置窗口图标
 		self.win.resizable(False,False) # 不允许改变窗口大小
 		# 定义窗体标题
 		self.win.title('微信群群发助手')
+
 		# 设置初始窗体的大小（宽x高）和位置（x,y）
 		self.win.geometry()
 		# 定义标签
@@ -46,6 +48,8 @@ class sendMsgToGroupMembers:
 
 	def mClick(self):
 		'''获取微信群成员按钮事件'''
+		if self.monty.winfo_exists(): # 消除标签框架容器，后续重建
+			self.monty.destroy()
 		if self.txt1.get()=='':
 			tkinter.messagebox.showinfo('提示','请输入群名称！')
 			return
@@ -62,8 +66,6 @@ class sendMsgToGroupMembers:
 				group_names.append(group_name)
 			tkinter.messagebox.showerror('错误','搜索到多个{}群:{}，请输入精确的群名称！'.format(len(group_names),group_names))
 		else: # len(mygroups)==1
-			if self.monty.winfo_exists():
-				self.monty.destroy()
 			r0='<Group: (.*?)>' # <Group: 学生之家>
 			group_name=re.search(r0,str(self.mygroups[0])).group(1) # 获取群名称
 			# 过滤掉一些图标符号，否则不能显示，会报错
