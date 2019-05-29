@@ -18,7 +18,7 @@
 
 ## 打包成安装文件 **.msi
 1. 安装cxfreeze：pip cxfreeze opencv_python -i http://pypi.douban.com/simple --trusted-host pypi.douban.com
-2. 新建[setup.py](setup.py)文件，其中注意wechat_helper.icon文件的放置在当前路径，cion图标可以由其他格式的图片文件通过网上[在线转化](https://image.online-convert.com/convert-to-ico)生成。
+2. 新建[setup.py](setup.py)文件，其中注意wechat_helper.icon文件(**.exe的图标文件)的放置在当前路径，cion图标可以由其他格式的图片文件通过网上[在线转化](https://image.online-convert.com/convert-to-ico)生成。
 3. cmd执行命令行：python setup.py bdist_msi
 
 执行命令后生成两个文件夹：
@@ -27,8 +27,8 @@
 
 ## 软件使用说明
 
-安装 wechat_helper-0.1-amd64.msi (链接：https://pan.baidu.com/s/1a3Xqu4e2SViwJhcPme1gjQ 
-提取码：4v9u)
+安装 wechat_helper-0.1-amd64.msi (链接：https://pan.baidu.com/s/1tTwKUX45e9M10BLJ6UAK9w 
+提取码：3m9y)
 
 在安装目下，找到 wechat_helper.exe，双击可以运行
 
