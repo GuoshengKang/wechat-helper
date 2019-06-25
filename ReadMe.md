@@ -8,7 +8,7 @@
 
 ## 使用包说明
 + **Tkinter**：Tkinter 是 Python 的标准 GUI 库,是python内置的安装包。
-+ **wxpy**：pip wxpy -i http://pypi.douban.com/simple --trusted-host pypi.douban.com
++ **wxpy**：pip install wxpy -i http://pypi.douban.com/simple --trusted-host pypi.douban.com
 
 ## 源代码（两个版本）
 + [wechat_helper_v0.py](wechat_helper_v0.py) 未封装成类版本
@@ -17,7 +17,7 @@
 注意：窗口icon不自定义使用图标，否则安装后可能会因为找不到文件而报错。
 
 ## 打包成安装文件 **.msi
-1. 安装cxfreeze：pip cxfreeze -i http://pypi.douban.com/simple --trusted-host pypi.douban.com
+1. 安装cxfreeze：pip install cxfreeze -i http://pypi.douban.com/simple --trusted-host pypi.douban.com
 2. 新建[setup.py](setup.py)文件，其中注意wechat_helper.icon文件(**.exe的图标文件)的放置在当前路径，cion图标可以由其他格式的图片文件通过网上[在线转化](https://image.online-convert.com/convert-to-ico)生成。
 3. cmd执行命令行：python setup.py bdist_msi
 
